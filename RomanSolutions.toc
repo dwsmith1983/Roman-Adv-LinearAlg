@@ -1,0 +1,2 @@
+\contentsline {part}{\numberline {I}Basic Linear Algebra}{5}{part.1}
+\contentsline {chapter}{\numberline {1}Vector Spaces}{7}{chapter.1}

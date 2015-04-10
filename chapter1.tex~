@@ -1,0 +1,53 @@
+\part{Basic Linear Algebra}
+
+\chapter{Vector Spaces}
+
+\begin{exercise}
+\item
+  Let \(V\) be a vector space over \(F\).
+  Prove that \(0v = 0\) and \(r0 = 0\) for all \(v\in V\) and \(r\in F\).
+  Describe the different \(0\)'s in these equations.
+  Prove that if \(rv = 0\), then \(r = 0\) or \(v = 0\).
+  Prove that \(rv = v\) implies that \(v = 0\) or \(r = 1\).
+\item
+  Prove theorem \(1.3:\) The set \(S(V)\) of all subspaces of a vector space
+  \(V\) is a complete lattice under set inclusion, with smallest element
+  \(\{0\}\), largest element \(V\), meet
+  \[
+  \glb\{S_i\colon i\in K\} = \bigcap_{i\in K}S_i
+  \]
+  and join
+  \[
+  \lub\{S_i\colon i\in K\} = \sum_{i\in K}S_i.
+  \]
+\item
+  \begin{exercise}[label = (\alph*)]
+  \item
+    Find an abelian group \(V\) and a field \(F\) for which \(V\) is a vector
+    space over \(F\) in at least two different ways, that is, there are two
+    different definitions of scalar multiplication making \(V\) a vector space
+    over \(F\).
+  \item
+    Find a vector space \(V\) over \(F\) and a subset \(S\) of \(V\) that is
+    \begin{enumerate*}[label = (\arabic*)]
+    \item
+      a subspace of \(V\) and
+    \item
+      a vector space using operations that differ from those of \(V\).
+    \end{enumerate*}
+  \end{exercise}
+\item
+  Suppose that \(V\) is a vector space with basis
+  \(\mathcal{B} = \{b_i\colon i\in I\}\) and \(S\) is a subspace of \(V\).
+  Let \(\{B_1,\ldots,B_k\}\) be a partition of \(\mathcal{B}\).
+  Then is it true that
+  \[
+  S = \bigoplus_{i = 1}^k(S\cap\langle B_i\rangle)
+  \]
+  What if \(S\cap\langle B_i\rangle\neq\varnothing\) for all \(i\)?
+\end{exercise}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
