@@ -5,40 +5,78 @@
 \begin{exercise}
 \item
   Let \(V\) be a vector space over \(F\).
-  Prove that \(0v = 0\) and \(r0 = 0\) for all \(v\in V\) and \(r\in F\).
+  Prove that \(0\mathbold{v} = \mathbold{0}\) and
+  \(r\mathbold{0} = \mathbold{0}\) for all \(\mathbold{v}\in V\) and
+  \(r\in F\).
   Describe the different \(0\)'s in these equations.
-  Prove that if \(rv = 0\), then \(r = 0\) or \(v = 0\).
-  Prove that \(rv = v\) implies that \(v = 0\) or \(r = 1\).
+  Prove that if \(r\mathbold{v} = \mathbold{0}\), then \(r = 0\) or
+  \(\mathbold{v} = \mathbold{0}\).
+  Prove that \(r\mathbold{v} = \mathbold{v}\) implies that
+  \(\mathbold{v} = \mathbold{0}\) or \(r = 1\).
   \par\smallskip
-  With \(0v\), we scalar multiplication; that is, \(0\in F\) and \(v\in V\).
+  With \(0\mathbold{v}\), we scalar multiplication; that is, \(0\in F\) and
+  \(\mathbold{v}\in V\).
   Therefore, \(0\cdot v_i\) for \(i = 1,2,\ldots\) and where \(v_i\) is the
-  \(i\)-th position of \(v\).
-  Now, \(0\cdot v_i = 0\) for \(i\) so \(0v=\mathbold{0}\) where
+  \(i\)-th position of \(\mathbold{v}\).
+  Now, \(0\cdot v_i = 0\) for \(i\) so \(0\mathbold{v}=\mathbold{0}\) where
   \(\mathbold{0}\) is the zero vector.
-  In the case of \(r0\) where \(r\in F\) and \(0\in V\), we have for each
-  \(i\)-th position of the zero vector a zero.
+  In the case of \(r\mathbold{0}\) where \(r\in F\) and \(\mathbold{0}\in V\),
+  we have for each \(i\)-th position of the zero vector a zero.
   Thus, \(r\cdot 0_i\Rightarrow\mathbold{0}\) for each \(i\) again leaving us
   with the zero vector.
-  In the first problem, where we have \(0v\), zero was a scalar in the field
-  \(F\); however, the solution to \(0v = 0\) was the zero vector in \(V\).
-  In second problem, where we have \(r0\), zero was a vector in \(V\) and the
-  solution \(r0 = 0\) was also the zero vector in \(V\).
+  In the first problem, where we have \(0\mathbold{v}\), zero was a scalar in
+  the field \(F\); however, the solution to \(0\mathbold{v} = \mathbold{0}\)
+  was the zero vector in \(V\).
+  In second problem, where we have \(r\mathbold{0}\), zero was a vector in \(V\) and the solution \(r\mathbold{0} = \mathbold{0}\) was also the zero
+  vector in \(V\).
   \par\smallskip
-  Suppose on the contrary that \(rv = 0\), \(r\neq 0\), and \(v\neq 0\).
-  Since \(r\neq 0\), we can divide out by \(r\) so \(rv = 0\iff v = 0\).
-  Thus, we have reached a contradiction; therefore, if \(rv = 0\), then either
-  \(r = 0\) or \(v = 0\).
+  Suppose on the contrary that \(r\mathbold{v} = \mathbold{0}\), \(r\neq 0\),
+  and \(\mathbold{v}\neq \mathbold{0}\).
+  Since \(r\neq 0\), we can divide out by \(r\) so
+  \(r\mathbold{v} = \mathbold{0}\iff \mathbold{v} = \mathbold{0}\).
+  Thus, we have reached a contradiction; therefore, if
+  \(r\mathbold{v} = \mathbold{0}\), then either \(r = 0\) or
+  \(\mathbold{v} = \mathbold{0}\).
+  \par\smallskip
+  Let \(v_i\) be the \(i\)-th component of \(\mathbold{v}\).
+  Then \(rv_i = v_i\) for all \(i\).
+  Now, suppose on the contrary that \(r\mathbold{v} = \mathbold{0}\),
+  \(r\neq 1\), and \(\mathbold{v}\neq \mathbold{0}\).
+  Now, the equation \(rv_i = v_i\iff r = 1\) or \(v_i = 0\).
+  Hence, we have reached a contradiction, and if
+  \(r\mathbold{v} = \mathbold{v}\), then either \(r = 1\) or
+  \(\mathbold{v} = \mathbold{0}\).
 \item
   Prove theorem \(1.3:\) The set \(S(V)\) of all subspaces of a vector space
   \(V\) is a complete lattice under set inclusion, with smallest element
   \(\{0\}\), largest element \(V\), meet
   \[
-  \glb\{S_i\colon i\in K\} = \bigcap_{i\in K}S_i
+    \glb\{S_i\colon i\in K\} = \bigcap_{i\in K}S_i
   \]
   and join
   \[
-  \lub\{S_i\colon i\in K\} = \sum_{i\in K}S_i.
+    \lub\{S_i\colon i\in K\} = \sum_{i\in K}S_i.
   \]
+  We are given that the maximal and minimal elements of \(S(V)\) are \(V\) and
+  \(\{0\}\), respectively.
+  Therefore, we only need to show that each pair of elements has a meet and a
+  join.
+  If \(S_i\not\subset S_j\) for all \(i,j\in K\), then
+  \(\bigcap_i S_i = \varnothing\) so the meet is the empty set, \(\{0\}\).
+  Since \(\varnothing\in S_i\) trivial for all \(i\in K\), the set inclusion
+  property is satisfied.
+  For the join, we have \(\sum_iS_i = \bigcup_iS_i\) so the join is the union
+  of the sets.
+  Now is \(S_j\in\bigcap_iS_i\), then \(S_j\subset\bigcap_iS_i\) so the set
+  inclusion property is satisfied.
+  Suppose \(S_j\neq\varnothing\) and \(S_j\subset S_i\) for some \(i,j\in K\).
+  Then \(\bigcap_iS_i = S_j\) for \(S_j\) the smallest set of the union; that
+  is, \(S_j\subset S_1\), \(S_j\subset S_2\), and so on where either
+  \(S_i\not\subset S_{i + 1}\) or \(S_i\subset S_{i + 1}\) for \(i\neq j\).
+  Therefore, the meet is the smallest set \(S_j = \bigcap_iS_i\).
+  Again, the join is simple the union of all the sets in \(\sum_iS_i\) which
+  could be the maximal element \(V\).
+  Thus, \(S(V)\) is a complete lattice.
 \item
   \begin{exercise}[label = (\alph*)]
   \item
@@ -61,7 +99,7 @@
   Let \(\{B_1,\ldots,B_k\}\) be a partition of \(\mathcal{B}\).
   Then is it true that
   \[
-  S = \bigoplus_{i = 1}^k(S\cap\langle B_i\rangle)
+    S = \bigoplus_{i = 1}^k(S\cap\langle B_i\rangle)
   \]
   What if \(S\cap\langle B_i\rangle\neq\varnothing\) for all \(i\)?
 \end{exercise}
